@@ -1,0 +1,115 @@
+
+input{
+  text-transform: capitalize;
+}
+
+body{
+  background-color: #E6E6E6;
+}
+
+.App{
+  text-transform: capitalize;
+}
+
+.big-avatar{
+  width: 150px !important;
+  height:150px !important;
+  margin: auto;
+}
+
+.list{
+  max-height:110vh;
+  overflow:auto;
+}
+
+.paper{
+  margin: auto;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  transition: all;
+  max-width: 748px;
+  min-width: 360px;
+}
+
+.text-field{
+  margin-top: 6px !important;
+  margin-left:10px !important;
+  margin-right:10px !important;
+  text-transform: capitalize;
+}
+
+.drawer-header{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  justify-content: flex-end;
+}
+
+.menu-text{
+  font-family: Poppins !important;
+  text-transform: uppercase;
+}
+
+.sub-text{
+  margin-top: 18px !important;
+margin-bottom: 10px !important;
+font-size: 14px !important;
+}
+
+.open{
+  margin-left: 300px !important;
+  width: calc(100% - 300px) !important;
+}
+
+.home{
+  margin-top: 8rem !important;
+  text-align: center;
+  text-transform: unset !important;
+  h1{
+    font-size: 4rem;
+    @media (max-width:768px) {
+      font-size: 2rem;
+    }
+  }
+  h2{
+    margin-top: 10px;
+    line-height: 150%;
+    font-size: 2rem;
+    @media (max-width:768px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.load-more{
+  display: block !important;
+  margin: 1rem auto !important;
+}
+
+//spinner
+
+.lds-dual-ring {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: auto;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #666;
+  border-color: #666 transparent #666 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
